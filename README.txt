@@ -1,0 +1,1 @@
+This repository contains data and python code used to produce precipitation index for MJO/BSISO.
