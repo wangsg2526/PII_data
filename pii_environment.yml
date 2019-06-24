@@ -1,0 +1,24 @@
+name: pii
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.6.5
+  - bottleneck
+  - notebook
+  - numpy=1.16.4
+  - eofs=1.4.0
+  - scipy=1.2.1
+  - xarray=0.12.1
+  - netcdf4=1.4.2
+  - numba
+  - jupyter
+  - matplotlib
+  - basemap
+  - seaborn
+  - cartopy
+  - statsmodels
+  - pandas
+  - jupyterlab
+  - pip:
+    - pytest
