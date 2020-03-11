@@ -1,5 +1,7 @@
 #!/sw1/wangs/anaconda3.6_new/bin//python
 
+""" by S. Wang """
+
 import sys
 import os.path
 import scipy.signal
