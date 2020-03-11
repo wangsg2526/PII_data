@@ -1,7 +1,5 @@
 This repository contains data and python code used to produce PII: precipitation index for tropical intraseasonal index (MJO/BSISO). 
 
-
-
 ncdump -h PII_EOFs.nc:
 
 netcdf PII_EOFs {
@@ -32,7 +30,7 @@ variables:
                 mjo_rt:_FillValue = NaN ;
 }
 
-eof: the EOF spatial patterns
-mjo_ind: PII index
+eof: The EOF spatial patterns (365). For the leap year, need interpolation. 
+mjo_ind: PII index from the TRMM Multi-satellite Preciptiation Analysis. 
 mjo_rt: Realtime PII Index
 
