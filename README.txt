@@ -30,6 +30,10 @@ variables:
                 mjo_rt:_FillValue = NaN ;
 }
 
+Variables: 
+
+lon: longitude, 0, 2.5, 5.0, 7.5, ..., 357.0
+lat: latitude, -20, -17.5, ..., -2.5, 0, 2.5, 17.5, 20.0
 eof: The EOF spatial patterns (365). For the leap year, need interpolation. 
 mjo_ind: PII index from the TRMM Multi-satellite Preciptiation Analysis. 
 mjo_rt: Realtime PII Index
