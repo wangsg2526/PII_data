@@ -1,5 +1,5 @@
 This repository contains data and python code used to produce PII: precipitation index for tropical intraseasonal index (MJO/BSISO). 
-Wang, S., 2020: A Precipitation-Based Index for Tropical Intraseasonal Oscillations. J. Climate, 33, 805–823, https://doi.org/10.1175/JCLI-D-19-0019.1
+
 
 
 ncdump -h PII_EOFs.nc:
