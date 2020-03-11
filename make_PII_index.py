@@ -147,10 +147,12 @@ if __name__ == '__main__':
 
 
     from trmm_util import load_trmm2deg_and_filter
-    tfile = '/sw21/wangs/trmmdata/2013later/all/trmm_1degree/trmm2p5_/trmm2p5.mat'
+    # tfile = '/sw21/wangs/trmmdata/2013later/all/trmm_1degree/trmm2p5_/trmm2p5.mat'
+    tfile = './trmm2p5.mat'
     precip_filt, precip_noac, precip_clim, precip_obs, lons, lats, dtime = load_trmm2deg_and_filter(ofile=tfile, lon_bnd=[0, 361], lat_bnd=[-20,20], bpfilt=[20,96])
     
-    xxx = xr.open_dataset('./tttt_trmm2p5_eof_normalized_crc_sign.nc', autoclose=True)
+    #xxx = xr.open_dataset('./tttt_trmm2p5_eof_normalized_crc_sign.nc', autoclose=True)
+    xxx = xr.open_dataset('./PII_EOFs.nc', autoclose=True)
     print(xxx)
 
     nx = 144
