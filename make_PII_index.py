@@ -56,12 +56,12 @@ def calc_mjo_rt(xx, precip_filt_east, dtime):
             iday = tin[it].timetuple().tm_yday - 1 # start from 0
     
             if (tin[it].year % 4 == 0) and iday == 365 :
-                a2 = (o_eof[iday-1,0,:]+o_eof[0,0,:]).T
+                a2 = 0.5*(o_eof[iday-1,0,:]+o_eof[0,0,:]).T
                 mjo_rt[it, 0] = np.sum(a1*a2 )/np.sum(a2*a2)
     
                 mjo_recon[it,:,:] = mjo_rt[it,0]*a2.reshape((17,144))
                 
-                a2 = (o_eof[iday-1,1,:]+o_eof[0,1,:]).T
+                a2 = 0.5*(o_eof[iday-1,1,:]+o_eof[0,1,:]).T
                 mjo_rt[it, 1] = np.sum(a1*a2 )/np.sum(a2*a2)
     
                 mjo_recon[it,:,:] += mjo_rt[it,1]*a2.reshape((17,144))
